@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Adminpanel">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="424dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/new_atw_wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="419dp"
+        android:layout_height="101dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_view"
+        android:layout_width="170dp"
+        android:layout_height="56dp"
+
+
+        android:layout_marginStart="132dp"
+        android:background="@drawable/round_bg"
+        android:text="Ratings"
+        android:textColor="@color/colorWhite"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912" />
+
+
+    <Button
+        android:id="@+id/btnadminpanel"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bg"
+        android:drawableRight="@drawable/icons8_logout_rounded_up_24px"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:text="Logout"
+        android:textColor="@color/colorWhite"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.331" />
+
+    <Button
+        android:id="@+id/btn_category"
+        android:layout_width="170dp"
+        android:layout_height="56dp"
+        android:text="Add Products"
+        android:background="@drawable/round_bg"
+        android:textColor="@color/colorWhite"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
+
+
+    <Button
+        android:id="@+id/btnShowOrders"
+        android:layout_width="170dp"
+        android:layout_height="56dp"
+        android:background="@drawable/round_bg"
+        android:text="New Oders"
+        android:textColor="@color/colorWhite"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665" />
+
+    <Button
+        android:id="@+id/appointmentsShow"
+        android:layout_width="170dp"
+        android:layout_height="56dp"
+        android:background="@drawable/round_bg"
+        android:text="Appoinments"
+        android:textColor="@color/colorWhite"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.458" />
+
+    <Button
+        android:id="@+id/AllUserlist"
+        android:layout_width="170dp"
+        android:layout_height="56dp"
+        android:background="@drawable/round_bg"
+
+        android:text="All Users"
+        android:textColor="@color/colorWhite"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="193dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="520dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Hello Admin"
+        android:textColor="@color/colorWhite"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="122dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dasd" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

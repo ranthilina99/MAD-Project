@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NptificaSendingActivity">
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView23"
+        android:background="@drawable/wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.196" />
+
+
+    <ImageView
+        android:id="@+id/applogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/dasd" />
+
+    <RelativeLayout
+        android:id="@+id/r3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView24"
+
+        android:layout_marginTop="20dp"
+
+
+        >
+
+
+        <EditText
+            android:id="@+id/edit_text_title"
+            android:layout_width="369dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/round_border"
+            android:layout_below="@+id/edit_text_message"
+            android:padding="10dp"
+            android:hint="     Notification Title" />
+
+
+
+
+
+        <EditText
+            android:id="@+id/edit_text_message"
+            android:hint="    Enter Ur Message"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="369dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:background="@drawable/round_border"
+            />
+
+
+
+        <Button
+            android:id="@+id/btn222"
+            android:layout_width="277dp"
+            android:layout_height="46dp"
+            android:background="@drawable/round_bg"
+            android:textColor="#FFF7F7"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:onClick="sendOnChannel1"
+            android:text="Send on Channel 1"
+            android:layout_below="@+id/edit_text_title"
+            android:layout_marginTop="80dp"
+            android:layout_marginHorizontal="60dp"
+
+            />
+
+        <Button
+            android:layout_width="277dp"
+            android:layout_height="46dp"
+            android:background="@drawable/round_bg"
+            android:onClick="sendOnChannel2"
+            android:text="Send on Channel 2"
+            android:layout_below="@+id/btn222"
+            android:textColor="#FFF7F7"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="60dp"
+
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView34nnnnn"
+        android:layout_width="203dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="527dp"
+        android:text="Notification"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

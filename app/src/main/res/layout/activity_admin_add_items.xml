@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAddItems">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="419dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="424dp"
+        android:layout_height="60dp"
+        android:background="@drawable/new_atw_wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@id/textView17"/>
+
+<RelativeLayout
+    android:id="@+id/r3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView18"
+
+   >
+    <ImageView
+        android:id="@+id/select1_product_image"
+        android:layout_width="189dp"
+        android:layout_height="176dp"
+        android:layout_centerHorizontal="true"
+
+        android:cropToPadding="false"
+        android:padding="@android:dimen/app_icon_size"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_camera1a"
+        android:background="@drawable/atw_border_image"
+
+
+        />
+
+
+    <EditText
+        android:id="@+id/product1_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select1_product_image"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/round_border"
+        android:hint="@string/Productname"
+        android:inputType="textMultiLine"
+        android:padding="14dp"
+        android:textSize="14dp" />
+
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product1_name"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/round_border"
+        android:foreground="@drawable/ic_down_arrow"
+        android:foregroundGravity="center_vertical|right|center_horizontal"
+        android:padding="12dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.864"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/spinnerType">
+
+
+        <EditText
+            android:id="@+id/product1_Price"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/round_border"
+            android:hint="@string/price"
+            android:inputType="number"
+            android:padding="14dp"
+
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/product1_brand"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/round_border"
+            android:hint="@string/brand"
+            android:inputType="textMultiLine"
+            android:padding="14dp"
+
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/product1_Discription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/round_border"
+        android:hint="@string/discription"
+        android:inputType="textMultiLine"
+        android:padding="14dp"
+
+        android:textSize="14dp" />
+
+
+
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.738"
+        android:layout_below="@id/product1_Discription"
+        android:paddingEnd="50dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:id="@+id/rdGrp1"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/atw_border_image"
+        >
+
+        <RadioButton
+            android:id="@+id/rdBtnAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/available"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.716" />
+
+        <RadioButton
+            android:id="@+id/rdBtnNotAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/notAvailable"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.878"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.716" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/add_new_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rdGrp1"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/round_bg"
+        android:padding="15dp"
+        android:text="@string/addProducts"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
+    <TextView
+        android:id="@+id/textView34nnnnn"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="527dp"
+        android:text="Add Items"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/applogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="74dp"
+        android:src="@drawable/dasd" />
+
+</RelativeLayout>
